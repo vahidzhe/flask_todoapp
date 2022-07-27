@@ -2,7 +2,7 @@ from flask import Flask,redirect,render_template,url_for,request,flash
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.secret_key = "DFRFRG"
+app.secret_key = "secret_key"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://///mnt/4CB64BFAB64BE356/VSC_PYTHON/ToDo/todo.db'
 db = SQLAlchemy(app)
 
